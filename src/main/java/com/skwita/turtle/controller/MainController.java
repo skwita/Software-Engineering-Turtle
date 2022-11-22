@@ -2,6 +2,7 @@ package com.skwita.turtle.controller;
 
 import com.skwita.turtle.model.Turtle;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -15,6 +16,7 @@ public class MainController {
         this.turtle = turtle;
     }
 
+    @GetMapping("/")
     public BufferedImage main(@RequestBody String input) {
         return turtle.process(input);
     }
