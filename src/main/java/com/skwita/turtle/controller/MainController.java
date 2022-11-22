@@ -4,6 +4,7 @@ import com.skwita.turtle.model.Turtle;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
 
 import javax.imageio.ImageIO;
@@ -20,13 +21,16 @@ public class MainController {
     }
 
     @GetMapping("/")
-    public void main(@RequestBody String input) throws IOException {
+    @ResponseBody
+    public String main(@RequestBody String input) throws IOException {
         try {
             BufferedImage image = turtle.process(input.split("\"")[3]);
             File outputFile = new File("image.jpg");
             ImageIO.write(image, "jpg", outputFile);
+            return outputFile.getAbsolutePath();
         } catch (IOException e) {
             e.printStackTrace();
         }
+        return "Something went wrong";
     }
 }
