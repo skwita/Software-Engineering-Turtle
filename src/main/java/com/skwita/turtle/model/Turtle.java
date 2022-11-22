@@ -17,14 +17,18 @@ public class Turtle {
         for (char[] row: field) {
             Arrays.fill(row, '-');
         }
+        char curColor = 'R';
         int curX = 0;
         int curY = 0;
         for (char aChar: input.toCharArray()) {
             switch (aChar) {
-                case '>': curX += curX < 64 ? 1 : 0; break;
-                case '<': curX -= curX > 0 ? 1 : 0; break;
-                case 'V': curY += curY < 64 ? 1 : 0; break;
-                case '^': curY -= curY > 0 ? 1 : 0; break;
+                case '>': curX += curX < 64 ? 1 : 0; field[curY][curX] = curColor; break;
+                case '<': curX -= curX > 0  ? 1 : 0; field[curY][curX] = curColor; break;
+                case 'V': curY += curY < 64 ? 1 : 0; field[curY][curX] = curColor; break;
+                case '^': curY -= curY > 0  ? 1 : 0; field[curY][curX] = curColor; break;
+                case 'R': curColor = 'R'; break;
+                case 'G': curColor = 'G'; break;
+                case 'B': curColor = 'B'; break;
             }
         }
     }
