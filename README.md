@@ -3,18 +3,23 @@
 # Overview
 This is a small service that allows you to transform text instructions into a picture.
 
+Input should be provided into http get request body like:
+`{"input":"INSTRUCTIONS"}`, where `INSTRUCTIONS` is the place for your input string.
+
+The resulting image will be saved with the path that is provided in the response body.
+
 ### The set of instructions is shown in the table below
-| Instruction | Description                            |
-|-------------|----------------------------------------|
-| \>          | Moves turtle one tile to the right     |
-| <           | Moves turtle one tile to the left      |
-| ^           | Moves turtle one tile up               |
-| V           | Moves turtle one tile down             |
-| +           | After this turtle will leave trail     |
-| _           | After this turtle will stop leave trail|
-| R           | Changes trail color to red             |
-| G           | Changes trail color to green           |
-| B           | Changes trail color to blue            |
+| Instruction | Description                               |
+|-------------|-------------------------------------------|
+| \>          | Moves turtle one tile to the right        |
+| <           | Moves turtle one tile to the left         |
+| ^           | Moves turtle one tile up                  |
+| V           | Moves turtle one tile down                |
+| +           | After this turtle will leave trail        |
+| -           | After this turtle will stop leaving trail |
+| R           | Changes trail color to red                |
+| G           | Changes trail color to green              |
+| B           | Changes trail color to blue               |
 
 # Examples of usage
 input in the request body:
