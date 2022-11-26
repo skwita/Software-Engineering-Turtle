@@ -25,7 +25,7 @@ input in the request body:
 
 output saved on the machine:
 
-![output example #1](https://raw.githubusercontent.com/skwita/Software-Engineering-Turtle/feature-issue#15edit-readme/outputExamples/image1.jpg)
+![output example #1](https://github.com/skwita/Software-Engineering-Turtle/blob/0e9b12c5f54565842aba8897edff45190e49e38d/outputExamples/image1.jpg)
 
 input in the request body:
 
@@ -35,4 +35,4 @@ input in the request body:
 
 output saved on the machine:
 
-![output example #2](https://raw.githubusercontent.com/skwita/Software-Engineering-Turtle/feature-issue#15edit-readme/outputExamples/image2.jpg)
+![output example #2](https://github.com/skwita/Software-Engineering-Turtle/blob/0e9b12c5f54565842aba8897edff45190e49e38d/outputExamples/image2.jpg)
