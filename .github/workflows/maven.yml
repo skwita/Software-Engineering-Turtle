@@ -46,8 +46,7 @@ jobs:
       - name: test_windows
         run: mvn test
 
-
-  test_maсos:
+  test_macos:
     runs-on: macos-latest
     steps:
       - uses: actions/checkout@v3
