@@ -1,3 +1,4 @@
+![badge](https://github.com/skwita/Software-Engineering-Turtle/actions/workflows/maven.yml/badge.svg)
 # Software-Engineering-Turtle
 *Study project "Turtle" for software engineering*
 # Overview
