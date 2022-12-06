@@ -1,3 +1,10 @@
+```main:```
+
+![badge](https://github.com/skwita/Software-Engineering-Turtle/actions/workflows/maven.yml/badge.svg?branch=main)
+
+```develop:```
+
+![badge](https://github.com/skwita/Software-Engineering-Turtle/actions/workflows/maven.yml/badge.svg?branch=develop)
 # Software-Engineering-Turtle
 *Study project "Turtle" for software engineering*
 # Overview
